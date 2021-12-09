@@ -13,13 +13,10 @@ Gameobject::Gameobject(const char* textsheet,int x,int y,int factor,int factory,
     mf = moveflag;
 }
 
-void Gameobject :: update()
+void Gameobject :: update(int k)
 {
-    if(mf==1)
-    {
-        xpos++;
-        ypos++;
-    }
+    xpos = xpos +k;
+    ypos = ypos;
 
     srcRect.h = 64;
     srcRect.w = 64;
