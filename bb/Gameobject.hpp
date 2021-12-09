@@ -11,7 +11,7 @@ class Gameobject
         Gameobject(const char* texturesheet,int x,int y,int factor,int factory,int moveflag);
         ~Gameobject();
 
-        void update();
+        void update(int k);
         void render();
 
         int xpos;
